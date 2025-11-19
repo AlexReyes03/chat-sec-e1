@@ -1,0 +1,124 @@
+# ==============================================================================
+# DEPENDENCIAS DEL PROYECTO: Sistema de Chat con Cifrado + Firma Digital
+# ==============================================================================
+# Proyecto: Chat Multiusuario con Cifrado, Firma Digital y Google Integration
+# Version: 5.0
+# Python: >= 3.8
+# ==============================================================================
+
+# ========================================
+# CRIPTOGRAFIA Y FIRMA DIGITAL
+# ========================================
+cryptography>=41.0.0
+# Librería principal para:
+# - Fernet (AES-128 CBC + HMAC)
+# - RSA-2048 (cifrado asimétrico)
+# - SHA-256 (hash e integridad)
+# - Firmas digitales (RSA + PKCS#7)
+# - Certificados X.509
+
+# ========================================
+# MANIPULACION DE ARCHIVOS
+# ========================================
+PyPDF2>=3.0.0
+# Lectura, escritura y modificación de archivos PDF
+# Usado para firmar documentos PDF
+
+reportlab>=4.0.0
+# Generación avanzada de PDFs
+# Usado para agregar información de firma visible
+
+# ========================================
+# SERVIDOR WEB Y API REST
+# ========================================
+fastapi>=0.110.0
+# Framework web moderno y rápido
+# Usado para la API REST de firma digital
+
+uvicorn[standard]>=0.27.0
+# Servidor ASGI de alto rendimiento
+# Usado para ejecutar FastAPI
+
+python-multipart>=0.0.9
+# Soporte para formularios multipart/form-data
+# Necesario para subir archivos en FastAPI
+
+websockets>=15.0.0
+# WebSocket seguro (WSS) - ya estaba en uso
+
+# ========================================
+# INTEGRACION CON GOOGLE APIS
+# ========================================
+google-auth>=2.27.0
+# Autenticación con Google OAuth 2.0
+
+google-auth-oauthlib>=1.2.0
+# Flujo OAuth 2.0 para aplicaciones instaladas
+
+google-auth-httplib2>=0.2.0
+# Transporte HTTP para Google APIs
+
+google-api-python-client>=2.115.0
+# Cliente oficial de Google APIs
+# Incluye Drive API y Gmail API
+
+# ========================================
+# BASE DE DATOS
+# ========================================
+SQLAlchemy>=2.0.0
+# ORM para manejo de base de datos
+
+PyMySQL>=1.1.0
+# Driver de MySQL para Python
+
+# ========================================
+# AUTENTICACION Y SEGURIDAD
+# ========================================
+bcrypt>=4.1.0
+# Hash de contraseñas con salt
+
+python-jose[cryptography]>=3.3.0
+# JWT (JSON Web Tokens) para autenticación
+
+passlib[bcrypt]>=1.7.4
+# Framework de hashing de contraseñas
+
+# ========================================
+# UTILIDADES
+# ========================================
+python-dotenv>=1.0.0
+# Carga de variables de entorno desde .env
+
+pydantic[email]>=2.6.0
+# Validación de datos y settings management
+# [email] incluye email-validator para EmailStr
+
+# ========================================
+# CORS (para desarrollo frontend)
+# ========================================
+fastapi-cors>=0.0.6
+# Soporte CORS para desarrollo local con React
+
+# ==============================================================================
+# INSTRUCCIONES DE INSTALACION
+#
+# PASO 1: Verificar Python instalado
+#   Windows:     python --version
+#   Linux/macOS: python3 --version
+#
+# PASO 2: Crear entorno virtual (recomendado)
+#   Windows:     python -m venv venv && venv\Scripts\activate
+#   Linux/macOS: python3 -m venv venv && source venv/bin/activate
+#
+# PASO 3: Instalar dependencias
+#   pip install -r requirements.txt
+#
+# PASO 4: Verificar instalación
+#   python -c "from cryptography.fernet import Fernet; from fastapi import FastAPI; print('OK')"
+#
+# PASO 5: Configurar Google OAuth
+#   1. Colocar archivo client_secret_*.json en la raíz de chat-backend
+#   2. Configurar GOOGLE_CREDENTIALS_FILE en .env
+#   3. Ejecutar flujo OAuth por primera vez
+#
+# ==============================================================================

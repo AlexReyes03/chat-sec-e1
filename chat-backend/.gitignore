@@ -1,0 +1,93 @@
+# ============================================================================
+# BACKEND - ARCHIVOS SENSIBLES Y TEMPORALES
+# ============================================================================
+
+# Archivos de configuración autogenerados
+.cursor/
+CLAUDE.md
+
+# ============================================================================
+# VARIABLES DE AMBIENTE - CREDENCIALES SENSIBLES
+# ============================================================================
+.env
+.env.local
+.env.production
+*.env
+
+# ============================================================================
+# CREDENCIALES DE GOOGLE OAUTH
+# ============================================================================
+client_secret_*.json
+*credentials*.json
+
+# ============================================================================
+# TOKENS Y CLAVES CRIPTOGRÁFICAS
+# ============================================================================
+# Tokens de autenticación
+tokens/
+*.json
+
+# Claves RSA y de firma digital
+keys/
+*.pem
+rsa_*.pem
+signature_*.pem
+
+# Certificados SSL autogenerados
+certs/
+*.crt
+*.key
+
+# ============================================================================
+# DOCUMENTOS GENERADOS Y TEMPORALES
+# ============================================================================
+# PDFs firmados por usuarios
+signed_documents/
+*.pdf
+
+# Archivos temporales
+temp_documents/
+temp_*
+
+# ============================================================================
+# PYTHON - CACHE Y ENTORNOS VIRTUALES
+# ============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+.env/
+
+# Logs
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Base de datos SQLite (si se usa para pruebas)
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# IDE Y EDITORES
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================================
+# SISTEMA OPERATIVO
+# ============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini

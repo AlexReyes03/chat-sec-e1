@@ -1,0 +1,105 @@
+# ============================================================================
+# FRONTEND - ARCHIVOS TEMPORALES Y SENSIBLES
+# ============================================================================
+
+# ============================================================================
+# VARIABLES DE AMBIENTE - API KEYS Y CREDENCIALES
+# ============================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# ============================================================================
+# DEPENDENCIAS Y BUILD
+# ============================================================================
+# Dependencias de npm
+node_modules/
+jspm_packages/
+
+# Build de producción
+dist/
+dist-ssr/
+build/
+*.local
+
+# Cache de Vite
+.vite/
+.cache/
+
+# ============================================================================
+# LOGS
+# ============================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================================================
+# TESTING
+# ============================================================================
+coverage/
+.nyc_output/
+*.lcov
+
+# ============================================================================
+# IDE Y EDITORES
+# ============================================================================
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================================================
+# SISTEMA OPERATIVO
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+*.lnk
+
+# Linux
+*~
+
+# ============================================================================
+# OTROS
+# ============================================================================
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

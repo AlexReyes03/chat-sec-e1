@@ -1,0 +1,85 @@
+# ============================================================================
+# GITIGNORE RAÍZ - PROYECTO CHATSEC v5.0
+# ============================================================================
+# Proyecto: Chat Multiusuario + Firma Digital + Google Integration
+# ============================================================================
+
+# Archivos de Claude Code
+.claude/
+
+# ============================================================================
+# BACKEND - chat-backend/
+# ============================================================================
+
+# Variables de ambiente y credenciales
+chat-backend/.env
+chat-backend/.env.*
+chat-backend/client_secret_*.json
+chat-backend/*credentials*.json
+
+# Tokens y claves
+chat-backend/tokens/
+chat-backend/keys/
+chat-backend/certs/
+chat-backend/**/*.pem
+chat-backend/**/*.crt
+chat-backend/**/*.key
+
+# Documentos generados
+chat-backend/signed_documents/
+chat-backend/temp_documents/
+chat-backend/**/*.pdf
+
+# Python
+chat-backend/__pycache__/
+chat-backend/**/*.py[cod]
+chat-backend/**/*$py.class
+chat-backend/venv/
+chat-backend/.venv/
+chat-backend/env/
+chat-backend/**/*.log
+
+# ============================================================================
+# FRONTEND - chat-frontend/
+# ============================================================================
+
+# Variables de ambiente
+chat-frontend/.env
+chat-frontend/.env.*
+
+# Dependencias y build
+chat-frontend/node_modules/
+chat-frontend/dist/
+chat-frontend/dist-ssr/
+chat-frontend/.vite/
+chat-frontend/build/
+
+# Logs
+chat-frontend/**/*.log
+
+# ============================================================================
+# IDE Y EDITORES (GLOBAL)
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+
+# ============================================================================
+# SISTEMA OPERATIVO (GLOBAL)
+# ============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# ============================================================================
+# OTROS ARCHIVOS TEMPORALES
+# ============================================================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.cache
