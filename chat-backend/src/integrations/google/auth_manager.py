@@ -117,8 +117,9 @@ class GoogleAuthManager:
             print("Asegúrate de usar la cuenta de Google correcta.")
             print("="*70 + "\n")
 
+            # Usar puerto 8080 (asegúrate de agregarlo en Google Cloud Console)
             creds = flow.run_local_server(
-                port=0,  # Puerto aleatorio
+                port=8080,
                 success_message='Autenticación exitosa. Puedes cerrar esta ventana.',
                 open_browser=True
             )
