@@ -259,18 +259,6 @@ pip3 --version
 ```bash
 # Metodo recomendado
 pip install -r requirements.txt
-
-# Metodo alternativo
-pip install cryptography>=41.0.0
-pip install websockets>=15.0.0
-```
-
-### 3. Verificar Instalación
-
-```bash
-
-python -c "from cryptography.fernet import Fernet; print('Cryptography instalado correctamente')"
-python -c "from src.security.validacion_integridad import ValidadorIntegridad; print('Validacion de integridad instalada correctamente')"
 ```
 
 ---
@@ -396,21 +384,10 @@ python Clientes.py
 ```
 
 El cliente CLI solo permite:
+
 - Login con credenciales (email/contraseña)
 - Chat en tiempo real
 - No tiene acceso a firma de PDF
-
-### Mensajes de Error
-
-El cliente puede recibir:
-
-- `"Su mensaje no pudo ser enviado (error de integridad)"` - Hash no coincide
-- `"Error de integridad en la comunicación"` - Formato inválido
-
-El servidor registra:
-
-- `[INTEGRIDAD] Registro rechazado desde {ip}: formato de hash invalido`
-- `[INTEGRIDAD] Mensaje rechazado de {nombre}: hash SHA-256 no coincide`
 
 ---
 
