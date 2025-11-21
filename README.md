@@ -163,21 +163,19 @@ Sistema de chat multiusuario cliente-servidor desarrollado en Python con soporte
 
 #### Archivos Nuevos
 
-- `unified_server.py` - Servidor unificado FastAPI (REST + WebSocket)
-- `init_database.py` - Script de inicialización de MySQL
-- `src/database/models.py` - Modelos SQLAlchemy (Usuario)
-- `src/database/connection.py` - Conexión a MySQL
-- `src/auth/auth_service.py` - Servicio de autenticación
-- `src/auth/password_manager.py` - Gestión de contraseñas con BCrypt
-- `src/auth/jwt_manager.py` - Gestión de tokens JWT
-- `chat-frontend/` - Aplicación React completa
+- `unified_server.py` - b171213a838836662aa3691b39d10ff1 - Servidor unificado FastAPI (REST + WebSocket)
+- `init_database.py` - 02048607f29809067b9c5bb5d2ae1a1a - Script de inicialización de MySQL
+- `src/database/models.py` - addc3e702db6e9442736b5eb8d6a464d - Modelos SQLAlchemy (Usuario)
+- `src/database/connection.py` - b67756df76a410d9a20659dda677c80b - Conexión a MySQL
+- `src/auth/auth_service.py` - eb951c2d9004e90cd33e2e65502432c0 - Servicio de autenticación
+- `src/auth/password_manager.py` - 9ff5985cd58b336a85ded32d16f90769 - Gestión de contraseñas con BCrypt
+- `src/auth/jwt_manager.py` - cddf5f6fa267a0076caedb0fd74122ca - Gestión de tokens JWT
 
 #### Archivos Modificados
 
-- `start.py` - Actualizado para servidor unificado
-- `requirements.txt` - Añadidas dependencias MySQL, BCrypt, JWT, SQLAlchemy
-- `.env` - Añadidas variables de base de datos
-- `src/config/config.py` - Añadida configuración de base de datos
+- `start.py` - 9bba325f03b6ced2b74fd656eee9945a - Actualizado para servidor unificado
+- `requirements.txt` - 349f3de8156bb10436b4c28157c6e46d - Añadidas dependencias MySQL, BCrypt, JWT, SQLAlchemy
+- `src/config/config.py` - 2a73643f2292f45bc319b6f16ef8e244 - Añadida configuración de base de datos
 
 #### Características
 
